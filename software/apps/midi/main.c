@@ -11,8 +11,8 @@
 
 #include "microbit_v2.h"
 
-#define BUTTON_A_PIN 5   // Button A is on P5
-#define BUTTON_B_PIN 11  // Button B is on P11
+#define BUTTON_A_PIN 14  // Button A is on P5
+#define BUTTON_B_PIN 23  // Button B is on P11
 
 static const nrfx_uarte_t UARTE_INST = NRFX_UARTE_INSTANCE(1);
 
@@ -42,6 +42,7 @@ int main(void) {
   uarte_init();
 
   // Configure GPIO Pins for Buttons A and B
+
 
   // loop forever
   while (1) {
